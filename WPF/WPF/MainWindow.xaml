@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
         Title="First interface" Height="300" Width="500">
-    <Grid>
-        <Label Content="Hello world!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+    <Grid x:Name="RootGrid">
+        <StackPanel Width="200">
+            <TextBlock TextAlignment="Center" FontWeight="Bold" Margin="20">Hello!</TextBlock>
+            <TextBlock TextAlignment="Center" Foreground="DarkRed" Margin="5">Please click below :)</TextBlock>
+            <Button Content="Click here" Width="90" Height="25" Click="Button_Click"></Button>
+        </StackPanel>
     </Grid>
 </Window>
